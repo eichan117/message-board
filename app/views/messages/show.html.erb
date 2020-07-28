@@ -26,3 +26,5 @@
 <%= link_to 'このメッセージを編集する', edit_message_path(@message), class: 'btn btn-light' %>
 
 <%= link_to 'このメッセージを削除する', @message, method: :delete, data: { confirm: '本当に削除してよろしいですか？' }, class: 'btn btn-danger' %>
+
+<%= link_to '一覧へ戻る',messages_path(@message),class: 'btn btn-primary' %>
